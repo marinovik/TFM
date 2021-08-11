@@ -13,7 +13,7 @@ def sentiment_analyzer_scores(sentence):
     score = analyser.polarity_scores(sentence)
     print("{:-<40} {}".format(sentence, str(score)))
 
-sentiment_analyzer_scores("This thing is super cool")
+sentiment_analyzer_scores("This thing is not that bad")
 
 # El tema de las exclamaciones influye:
 sentiment_analyzer_scores("This thing is super cool!")
@@ -29,7 +29,7 @@ sentiment_analyzer_scores("Food here is extremely good.")
 sentiment_analyzer_scores("Food here is extremely good but service is horrible.")
 
 # Emotis
-print(sentiment_analyzer_scores('I am 😄 today'))
+print(sentiment_analyzer_scores('I was 😄 yesterday, but today is a horrible day'))
 print(sentiment_analyzer_scores('😊'))
 print(sentiment_analyzer_scores('😥'))
 print(sentiment_analyzer_scores('☹️'))
