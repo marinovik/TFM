@@ -16,11 +16,10 @@ app = dash.Dash(__name__)
 server = app.server
 
 #---------------------------------------------------------------
-df = pd.read_csv("Visualizacion/df_completo.csv")
+df = pd.read_csv("df_completo.csv")
 dff = df[['text', 'retweeted', 'user_location', 'created_at_hour', 'topic', 'var_obj_cont', 'var_obj_cat']]
 dff.sort_values(by='created_at_hour', inplace=True)
 dff[:5]
-
 
 #---------------------------------------------------------------
 
